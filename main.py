@@ -222,22 +222,22 @@ n = 5
 #     y = str(x**2 - 2*x + 1)
 #     print(f"{x:^5} | {y:^5}")
 
-lst = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-n = 20
-
-
-def getMidl(lst, target):
-    if not lst:
-        return -1
-
-    midl = len(lst) // 2
-
-    if lst[midl] == target:
-        return target
-    elif target < lst[midl]:
-        return getMidl(lst[:midl], target)
-    else:
-        return getMidl(lst[midl + 1:], target)
-
-
-print(getMidl(lst, n))
+# lst = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# n = 20
+#
+#
+# def getMidl(lst, target):
+#     if not lst:
+#         return -1
+#
+#     midl = len(lst) // 2
+#
+#     if lst[midl] == target:
+#         return target
+#     elif target < lst[midl]:
+#         return getMidl(lst[:midl], target)
+#     else:
+#         return getMidl(lst[midl + 1:], target)
+#
+#
+# print(getMidl(lst, n))
